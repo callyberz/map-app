@@ -6,7 +6,7 @@ export default {
                 {
                     "nameEn": "Acacia confusa",
                     "nameZh": "台灣相思",
-                    "quantity": "3124"
+                    "quantity": "3124",
                 },
                 {
                     "nameEn": "Macaranga tanarius",

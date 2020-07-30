@@ -168,17 +168,17 @@ class App extends Component {
   }
 
   render() {
-    const { selectedDistrictData, districtName, showModal } = this.state;
+    const { selectedDistrictData, showModal } = this.state;
     return (
       <div>
         <div id="chartdiv" style={{ width: "100%", height: "750px" }}></div>
         <ReactModal
           isOpen={showModal}
-          contentLabel="onRequestClose Example"
           onRequestClose={this.handleCloseModal}
           ariaHideApp={false}
+          closeTimeoutMS={500}
         >
-          <button onClick={this.handleCloseModal}>Close Modal</button>
+          <button onClick={this.handleCloseModal}>Close</button>
           <PieChart
             data={selectedDistrictData} />
         </ReactModal>
