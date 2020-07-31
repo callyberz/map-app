@@ -33,6 +33,7 @@ function PieChart(props) {
         return (
             <div>
                 {temp.name}
+                <section>Chemical Composition (%)</section>
                 <ul>
                     <li>Cellulose: {temp.cellulose}</li>
                     <li>Hemicellulose: {temp.hemicellulose}</li>
