@@ -89,7 +89,6 @@ class App extends Component {
     activeState.properties.fill = chart.colors.getIndex(1);
 
     const allDistricts = tree["districts"];
-    console.log(allDistricts)
 
     // Create an event to toggle "active" state
     polygonTemplate.events.on("hit", (event) => {
