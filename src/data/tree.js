@@ -31,7 +31,7 @@ export default {
             ]
         },
         {
-            "district": "Tseun Wan",
+            "district": "Tsuen Wan",
             "trees": [
                 {
                     "nameEn": "Acacia confusa",

@@ -89,6 +89,8 @@ class App extends Component {
     activeState.properties.fill = chart.colors.getIndex(1);
 
     const allDistricts = tree["districts"];
+    console.log(allDistricts)
+
     // Create an event to toggle "active" state
     polygonTemplate.events.on("hit", (event) => {
       const districtName = event.target.dataItem.dataContext.name;
@@ -128,7 +130,7 @@ class App extends Component {
     // Set calculateVisualCenter to true in order to get the centriod of the polygon
     polygonSeries.calculateVisualCenter = true;
 
-    const districtHasData = ["Tuen Mun", "Yuen Long", "North", "Sai Kung", "Sha Tin", "Tseun Wan", "Kwai Tsing"]
+    const districtHasData = ["Tuen Mun", "Yuen Long", "North", "Sai Kung", "Sha Tin", "Tsuen Wan", "Kwai Tsing"]
 
     // Set up label series to populate
     polygonSeries.events.on("datavalidated", function () {
